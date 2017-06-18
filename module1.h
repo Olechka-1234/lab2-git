@@ -8,13 +8,11 @@
 
 using namespace std;
 
-
-
 class KOD {
 
 private:
 
-	int key;	
+	int key;
 
 public:
 
@@ -50,21 +48,19 @@ KOD::~KOD()
 
 string KOD::shifr(string str)
 
-	// str - ������ �������� ��� ����������
-
 {
 
-	for (int i=0;i<str.length();i++) 
+	for (int i=0;i<str.length();i++)
 
 		if (('a'<=str[i]) && (str[i] <='z') )
 
 		{
 
-			if (char(int(str[i]) + key) > 'z') str[i] = char(int(str[i]) + key - 26) ;//��������-�������� ������ �����
+			if (char(int(str[i]) + key) > 'z') str[i] = char(int(str[i]) + key - 26) ;
 
-			else 
+			else
 
-				if (char(int(str[i]) + key) < 'a') str[i] = char(int(str[i]) + key + 26) ;//��������-�������� ������ �����
+				if (char(int(str[i]) + key) < 'a') str[i] = char(int(str[i]) + key + 26) ;
 
 				else str[i] = char(int(str[i]) + key);
 
@@ -78,7 +74,6 @@ string KOD::shifr(string str)
 
 string KOD::rashifr(string str)
 
-	// str - ������ �������� ��� ����������
 
 {
 
@@ -88,11 +83,11 @@ string KOD::rashifr(string str)
 
 		{
 
-			if (char(int(str[i]) - key) > 'z') str[i] = char(int(str[i]) - key - 26) ;//��������-�������� ������ �����
+			if (char(int(str[i]) - key) > 'z') str[i] = char(int(str[i]) - key - 26) ;
 
-			else 
+			else
 
-				if (char(int(str[i]) - key) < 'a') str[i] = char(int(str[i]) - key + 26) ;//��������-�������� ������ �����
+				if (char(int(str[i]) - key) < 'a') str[i] = char(int(str[i]) - key + 26) ;
 
 				else str[i] = char(int(str[i]) - key);
 

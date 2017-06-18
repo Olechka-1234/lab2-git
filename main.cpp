@@ -4,15 +4,13 @@ void main()
 
 {
 
-	string mas;//������, ���������� ��������
+	string mas;
 
 	int sdvig, N;
 
-
-
 	cout << "Enter text for codding: ";
 
-	std::getline(std::cin, mas);//������ ��� ������ � ���������
+	std::getline(std::cin, mas);
 
 	cout << "Enter key (sdvig): ";
 
@@ -20,11 +18,7 @@ void main()
 
 	KOD box(sdvig);
 
-
-
 	int c = 1;
-
-
 
 	while (c != 0)
 
